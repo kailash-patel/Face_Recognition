@@ -1,18 +1,43 @@
-# Face_Recognition
-A real-time face detection and recognition system using dlib and OpenCV with MySQL database integration for logging face detection events.
+# Face Recognition System
+## Project Overview
+Face Recognition System is a real-time face detection and recognition platform with database integration for security applications. The system leverages computer vision and machine learning to identify individuals through webcam feeds and maintain comprehensive access logs.
 
-##Overview
-This system provides real-time face recognition capabilities using a webcam. It detects faces, compares them against a trained model of known faces, and logs recognition events to a MySQL database. The system consists of:
+## Project Structure
+### Core Components
+- **Face Recognition Module**: Real-time face detection and matching capabilities
+- **Training System**: Model creation from sample face images
+- **Database Integration**: MySQL logging for recognition events
+- **Real-time Interface**: Live webcam monitoring and recognition
 
-Face detection and recognition module
-Training module for creating face recognition models
-Database integration for event logging
-Real-time webcam interface
+### Key Features
+- **Real-time Detection**: Instant face detection using webcam feed
+- **Face Recognition**: Compare detected faces against known individuals
+- **Database Logging**: Record all recognition events with timestamps
+- **Configurable Security**: Adjustable recognition tolerance levels
+- **Interval Controls**: Prevent duplicate log entries with time-based rules
 
-##Features
+## Technical Details
+### Recognition Implementation
+- dlib's facial landmark detection for precise face mapping
+- Face encoding using deep neural networks
+- Euclidean distance calculations for face matching
+- OpenCV integration for image capture and processing
 
-Real-time face detection and recognition from webcam feed
-Training interface to create face recognition models from sample images
-Configurable recognition tolerance levels
-Database logging of recognized and unrecognized faces
-Time-based logging controls to prevent duplicate entries
+### Database System
+- MySQL database for event storage
+- Structured logging of recognized and unrecognized faces
+- Recognition type classification and timestamp recording
+- Queryable history for security auditing
+
+## Getting Started
+### Prerequisites
+- Python 3.6+
+- OpenCV
+- dlib
+- NumPy
+- MySQL Server
+- mysql-connector-python
+
+### Installation
+1. Clone this repository
+2. Install Python dependencies:
