@@ -40,4 +40,20 @@ Face Recognition System is a real-time face detection and recognition platform w
 
 ### Installation
 1. Clone this repository
+   
 2. Install Python dependencies:
+- pip install opencv-python dlib numpy mysql-connector-python
+  
+3. Download required model files:
+- shape_predictor_68_face_landmarks.dat
+- dlib_face_recognition_resnet_model_v1.dat
+
+4. Configure MySQL:
+- CREATE DATABASE face_recognition_db;
+
+5. Run the application:
+- python main.py
+
+Press 'q' to exit the application
+
+
